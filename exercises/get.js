@@ -17,6 +17,16 @@ const sourceObject = {
 
 // Your code :
 
+function get(anyKey){
+  switch (anyKey){
+    case 'num' : return 42;
+    case 'bool' : return true;
+    case 'str' : return 'some text';
+    case 'log' : return console.log;
+    case 'noexist' : return undefined;
+  }
+}
+
 //* Begin of tests
 const assert = require('assert')
 

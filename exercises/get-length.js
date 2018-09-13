@@ -8,7 +8,9 @@
  */
 
 // Your code :
-
+function getLength(aLength){
+    return aLength.length;
+}
 //* Begin of tests
 const assert = require('assert')
 

@@ -8,6 +8,14 @@
  *
  */
 
+function repeat(a, b){
+    let sortie = '';
+    for (let count=b; count > 0; count--){
+        sortie += a;
+    }
+    return sortie;
+}
+
 //* Begin of tests
 const assert = require('assert')
 

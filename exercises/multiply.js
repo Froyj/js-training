@@ -9,6 +9,27 @@
  */
 
 // Your code :
+function multiply(a, b){
+    let somme = 0;
+    if((a>0 && b>0) || (a<0 && b<0){
+        while(b != 0){
+            somme += a;
+            b += 1;
+        }
+    }
+    if((a>0 && b>0) || (a<0 && b<0){
+        while(b != 0){
+            somme += a;
+            b += 1;
+        }
+    }
+    if((a>0 && b>0) || (a<0 && b<0){
+        while(b != 0){
+            somme += a;
+            b += 1;
+        }
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
