@@ -5,6 +5,13 @@
  * and return the total
  *
  */
+function total(numArray) {
+    let sum = 0; 
+    for (let idNum = 0; idNum < numArray.length; idNum++){
+        sum += numArray[idNum];
+    }
+    return sum;
+}
 
 
 //* Begin of tests

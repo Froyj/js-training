@@ -10,25 +10,12 @@
 
 // Your code :
 function multiply(a, b){
-    let somme = 0;
-    if((a>0 && b>0) || (a<0 && b<0){
-        while(b != 0){
-            somme += a;
-            b += 1;
-        }
+    let resultat = 0;
+    for (let count = 0; count < Math.abs(b); count++){
+        resultat += Math.abs(a);
     }
-    if((a>0 && b>0) || (a<0 && b<0){
-        while(b != 0){
-            somme += a;
-            b += 1;
-        }
-    }
-    if((a>0 && b>0) || (a<0 && b<0){
-        while(b != 0){
-            somme += a;
-            b += 1;
-        }
-    }
+    resultat = ((a<=0 && b<=0) || (a>=0 && b>=0)) ? resultat : -resultat;
+    return resultat;
 }
 
 //* Begin of tests

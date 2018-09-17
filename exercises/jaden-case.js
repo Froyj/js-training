@@ -11,16 +11,15 @@
  */
 
 function jadenCase(text) {
-    let arrText = text.split(' ');
-    let retext;
-    for (let ind = 0; ind < text.length; ind++){
-        if (ind<arrText.length){
-            retext +=  arrText[ind].charAt(0).toUpperCase() +  arrText[ind].slice(1, arrText[ind].length).toLowerCase() + ' ';
-        }
-        else {
-            retext +=  arrText[ind].charAt(0).toUpperCase() +  arrText[ind].slice(1, arrText[ind].length).toLowerCase();
+    let arrWord = text.toLowerCase().split(' ');
+    let retext='';
+    for (let idWord = 0; idWord < arrWord.length; idWord++){
+        retext += arrWord[idWord].charAt(0).toUpperCase() +  arrWord[idWord].slice(1, arrWord[idWord].length);
+        if (idWord < arrWord.length-1) {
+            retext += ' ';
         }
     }
+    return retext;
 }
 
 //* Begin of tests
