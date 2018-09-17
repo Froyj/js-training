@@ -10,7 +10,16 @@
  */
 
 // Your code :
-
+const multiply = (a, b) => {
+    let result = 0;
+    if(b != 0){
+        result += Math.abs(a);
+        (b < 0) ? multiply(b-1) : multiply(b+1);
+    } else {
+        result = ((a<=0 && b<=0) || (a>=0 && b>=0)) ? result : -result;
+        return result;
+    }
+}
 
 //* Begin of tests
 const assert = require('assert')
